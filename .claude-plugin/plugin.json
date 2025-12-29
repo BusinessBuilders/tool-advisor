@@ -1,6 +1,6 @@
 {
   "name": "tool-advisor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Intelligently analyze installed plugins, skills, and agents to recommend the best tools for any given project or task. Provides proactive suggestions and helps users discover their full toolkit capabilities.",
   "author": {
     "name": "Will",
@@ -14,7 +14,9 @@
     "automation",
     "productivity",
     "auto-optimize",
-    "project-analysis"
+    "project-analysis",
+    "workflow-orchestration",
+    "agent-spawning"
   ],
   "license": "MIT"
 }
