@@ -39,8 +39,17 @@ Tool Advisor helps you leverage your full Claude Code toolkit by:
 
 ### Skills
 
-- **Plugin Discovery & Analysis** - Techniques for discovering and analyzing installed tools
-- **Recommendation Strategies** - Algorithms for matching tasks to tools
+- **auto-optimize** - Automatically reads Project.md, asks clarifying questions, and spawns coordinated agents for project execution
+  - Triggers: "read my Project.md and get started", "optimize my setup", "auto-optimize"
+  - Use case: Project kickoff and initial setup with automated workflow orchestration
+
+- **workflow-orchestrator** - Analyzes current conversation context and spawns agents mid-workflow
+  - Triggers: "summarize and launch agents", "spawn agents for this work", "orchestrate the workflow"
+  - Use case: Mid-project task delegation and agent coordination
+  - Manual invoke: `Skill(skill="tool-advisor:workflow-orchestrator")`
+
+- **discovery** - Techniques for discovering and analyzing installed tools
+- **recommendation** - Algorithms for matching tasks to tools
 
 ### Hooks
 
@@ -190,6 +199,10 @@ tool-advisor/
 │   └── plugin.json          # Plugin manifest
 ├── README.md                # This file
 ├── skills/
+│   ├── auto-optimize/
+│   │   └── SKILL.md        # Project kickoff automation
+│   ├── workflow-orchestrator/
+│   │   └── SKILL.md        # Mid-workflow agent spawning
 │   ├── discovery/
 │   │   ├── SKILL.md        # Plugin discovery techniques
 │   │   └── references/     # Detailed reference docs
