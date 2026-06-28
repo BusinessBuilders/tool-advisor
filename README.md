@@ -1,6 +1,28 @@
-# Tool Advisor Plugin
+<div align="center">
 
-Intelligently analyze installed plugins, skills, and agents to recommend the best tools for any given project or task.
+# 🧭 Tool Advisor
+
+### A Claude Code plugin that finds the *right* tool for the job — from the toolkit you already have.
+
+[![License](https://img.shields.io/badge/license-MIT-58A6FF?style=for-the-badge)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://docs.claude.com/en/docs/claude-code)
+[![Shell](https://img.shields.io/badge/scripts-Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)](scripts/)
+
+You install dozens of plugins, skills, and agents — then forget half of them exist. **Tool Advisor scans your whole Claude Code toolkit, indexes what everything *does*, and recommends the best tool for whatever you're about to do** — proactively, mid-conversation, with a confidence score.
+
+[Quick Start](#quick-start) · [Features](#features) · [Configuration](#configuration) · [How It Works](#how-it-works)
+
+</div>
+
+---
+
+## Quick Start
+
+```bash
+/tool-advisor:scan-tools                       # index everything you have installed
+/tool-advisor:recommend "review this pull request"   # get the best tool for a task
+/tool-advisor:show-capabilities                # browse what you've got
+```
 
 ## Overview
 
